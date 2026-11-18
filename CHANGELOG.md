@@ -16,4 +16,5 @@ First version.
 - Agency-level learning log outside client repositories.
 - Connectors: Search Console, Bing Webmaster, PageSpeed/CrUX, Vercel, Google Business Profile (OAuth, reads, gated writes, manual template fallback).
 - Provider adapters implemented from documentation (not yet live-verified): DataForSEO (organic, maps, volumes, backlinks), OpenAI, Perplexity and Gemini (AI answers), Wayback (domain age), manual and agent-search imports.
-- 53 unit tests on a fixture site, including an end-to-end teardown from a manual observation.
+- Outreach can be sent by the client or by the agency (with a recorded written mandate); `offsite.py send-check` enforces the German channel rules before every send. The plugin itself never sends.
+- 54 unit tests on a fixture site, including an end-to-end teardown from a manual observation.

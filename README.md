@@ -84,6 +84,8 @@ First run in a client repository:
 /twwa-growth plan
 ```
 
+Plain `/twwa-growth` in a client repository without a state folder starts with `onboard` on its own. After the first cycle the rhythm is `/twwa-growth weekly` every week, `/twwa-growth report` every month, and a fresh teardown and plan every 35 days.
+
 For a prospect: `/twwa-growth check https://www.example.de`
 
 ## Data setup
@@ -141,7 +143,7 @@ Design decisions and the defaults still open for the agency owner are in [`DECIS
 
 ## Status
 
-Version 0.1.0. All scripts run without credentials (reduced, honest output) and are covered by 53 unit tests on a fixture site. Provider adapters and the Business Profile connector are built from the vendors' documentation and are marked live-verified only after their first real call. See [`CHANGELOG.md`](CHANGELOG.md).
+Version 0.1.0. All scripts run without credentials (reduced, honest output) and are covered by 54 unit tests on a fixture site. Provider adapters and the Business Profile connector are built from the vendors' documentation and are marked live-verified only after their first real call. See [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Credits
 
