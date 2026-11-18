@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "source": "docs/research/07-technical-astro-vercel.md section 4 (schema.org types; mapping is a recommendation, not a Google rule)",
+  "verified_on": "2026-11-16",
+  "trades": {
+    "elektro": {"type": "Electrician", "alternatives": []},
+    "elektriker": {"type": "Electrician", "alternatives": []},
+    "shk": {"type": "Plumber", "alternatives": ["HVACBusiness"], "note": "HVACBusiness when heating and climate dominate"},
+    "sanitaer": {"type": "Plumber", "alternatives": ["HVACBusiness"]},
+    "heizung": {"type": "HVACBusiness", "alternatives": ["Plumber"]},
+    "dachdecker": {"type": "RoofingContractor", "alternatives": []},
+    "maler": {"type": "HousePainter", "alternatives": ["GeneralContractor"]},
+    "stuckateur": {"type": "HousePainter", "alternatives": ["GeneralContractor"], "note": "GeneralContractor when Stuck, Putz and Fassade dominate"},
+    "gipser": {"type": "HousePainter", "alternatives": ["GeneralContractor"]},
+    "bau": {"type": "GeneralContractor", "alternatives": []},
+    "bauunternehmen": {"type": "GeneralContractor", "alternatives": []},
+    "schlosserei": {"type": "HomeAndConstructionBusiness", "alternatives": ["Locksmith"], "note": "Locksmith only for Schlüsseldienst"},
+    "schluesseldienst": {"type": "Locksmith", "alternatives": []},
+    "galabau": {"type": "HomeAndConstructionBusiness", "alternatives": [], "note": "schema.org has no specific landscaping type"},
+    "tischler": {"type": "HomeAndConstructionBusiness", "alternatives": ["GeneralContractor"]},
+    "fliesenleger": {"type": "HomeAndConstructionBusiness", "alternatives": ["GeneralContractor"]},
+    "steuerberater": {"type": "AccountingService", "alternatives": []},
+    "finanzberatung": {"type": "FinancialService", "alternatives": []},
+    "versicherung": {"type": "InsuranceAgency", "alternatives": []},
+    "architekt": {"type": "ProfessionalService", "alternatives": []},
+    "ingenieur": {"type": "ProfessionalService", "alternatives": []},
+    "hausverwaltung": {"type": "RealEstateAgent", "alternatives": ["ProfessionalService"]},
+    "spedition": {"type": "LocalBusiness", "alternatives": ["MovingCompany"], "note": "MovingCompany only for Umzüge"},
+    "umzug": {"type": "MovingCompany", "alternatives": []},
+    "fahrschule": {"type": "DrivingSchool", "alternatives": []},
+    "restaurant": {"type": "Restaurant", "alternatives": [], "extra_properties": ["servesCuisine", "menu", "acceptsReservations"]}
+  },
+  "verticals": {
+    "handwerk": "HomeAndConstructionBusiness",
+    "steuerberater": "AccountingService",
+    "finanzberatung": "FinancialService",
+    "ingenieure": "ProfessionalService",
+    "hausverwaltung": "RealEstateAgent",
+    "spedition": "LocalBusiness",
+    "fahrschule": "DrivingSchool",
+    "restaurant": "Restaurant",
+    "other": "LocalBusiness"
+  },
+  "local_business_types": [
+    "LocalBusiness", "HomeAndConstructionBusiness", "Electrician", "Plumber", "HVACBusiness", "RoofingContractor", "HousePainter",
+    "GeneralContractor", "Locksmith", "MovingCompany", "AccountingService", "FinancialService", "InsuranceAgency", "ProfessionalService",
+    "RealEstateAgent", "DrivingSchool", "Restaurant", "LegalService", "AutoRepair", "Store", "MedicalBusiness", "EmploymentAgency"
+  ],
+  "rich_result_status": {
+    "FAQPage": {"status": "removed", "since": "2026-05-07", "severity": "info", "note_de": "FAQ-Rich-Results gibt es nicht mehr; das Markup darf bleiben, bringt bei Google aber keine Darstellung."},
+    "HowTo": {"status": "deprecated", "severity": "P3", "note_de": "HowTo-Rich-Results sind eingestellt."},
+    "SpecialAnnouncement": {"status": "retired", "since": "2025", "severity": "P3", "note_de": "Von Google eingestellt."},
+    "ClaimReview": {"status": "retired", "since": "2025", "severity": "P3", "note_de": "Von Google für die Suche eingestellt."},
+    "Course": {"status": "partly_retired", "since": "2025", "severity": "info", "note_de": "Course-Info-Rich-Results eingestellt."},
+    "Quiz": {"status": "retired", "since": "2026", "severity": "info", "note_de": "Practice-Problem-Rich-Results eingestellt."},
+    "Vehicle": {"status": "retired", "since": "2025", "severity": "info", "note_de": "Vehicle-Listing-Rich-Results eingestellt."},
+    "Car": {"status": "retired", "since": "2025", "severity": "info", "note_de": "Vehicle-Listing-Rich-Results eingestellt."}
+  },
+  "self_serving_review_types": ["Review", "AggregateRating"]
+}

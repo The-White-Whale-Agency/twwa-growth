@@ -1,0 +1,21 @@
+{
+  "name": "Musterbetrieb Stuck und Putz GmbH",
+  "schema_type": "HousePainter",
+  "url": "https://www.musterbetrieb.example",
+  "phone": "+49 7000 123456",
+  "phone_display": "07000 / 12 34 56",
+  "email": "info@musterbetrieb.example",
+  "founded": 2001,
+  "address": { "street": "Musterstraße 1", "zip": "12345", "city": "Musterstadt", "region": "Baden-Württemberg", "country": "DE" },
+  "address_public": true,
+  "geo": { "lat": 48.0, "lng": 8.0 },
+  "hours": [{ "days": ["Mo", "Tu", "We", "Th", "Fr"], "open": "07:30", "close": "17:00" }],
+  "services": [
+    { "id": "fassadensanierung", "name": "Fassadensanierung" },
+    { "id": "innenputz", "name": "Innenputz" },
+    { "id": "stuck", "name": "Stuck" }
+  ],
+  "service_area": [{ "town": "Musterstadt" }, { "town": "Nachbarstadt" }, { "town": "Beispielort" }],
+  "gbp": { "maps_url": null },
+  "profiles": {}
+}

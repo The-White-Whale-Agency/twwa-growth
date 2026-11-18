@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "tier": "premium",
+  "scope_file": "scope.md",
+  "tier_guard": null,
+  "state_dir": ".twwa-growth",
+  "site": {
+    "url": "https://www.musterbetrieb.example",
+    "default_branch": "main",
+    "money_pages": [
+      "/"
+    ],
+    "preview_hosts": [
+      "staging.musterbetrieb.example"
+    ],
+    "dist_dir": "dist",
+    "build_command": "npm run build"
+  },
+  "exclusivity": {
+    "offered": false,
+    "region": null
+  },
+  "guarantee": {
+    "mode": "none"
+  },
+  "approval": {
+    "owner_channel": "message",
+    "twwa_channel": "branch_review"
+  },
+  "call_tracking": {
+    "mode": "none"
+  },
+  "vercel": {
+    "custom_events": false,
+    "analytics_plus": false
+  },
+  "gbp": {
+    "mode": "auto",
+    "writes": "approved",
+    "pacing_hours": 48
+  },
+  "providers": {
+    "prefer": {},
+    "disabled": []
+  },
+  "spend": {
+    "monthly_cap_usd": 0
+  },
+  "legal": {
+    "signoff": false,
+    "review_request_electronic": false,
+    "referrer_capture": false
+  },
+  "owner_input": {
+    "monthly_project_report": true
+  },
+  "outreach": {
+    "send_mode": "draft_only"
+  },
+  "ai_bots": {
+    "training": "no_change"
+  },
+  "paid_ads": {
+    "mode": "mention_only"
+  },
+  "data": {
+    "pii": "never"
+  },
+  "autopilot": {
+    "level": "off"
+  },
+  "language": {
+    "client": "de",
+    "internal": "auto"
+  },
+  "caps": {
+    "proposals_per_cycle": 5,
+    "table_stakes_slots": 2,
+    "target_queries": 15,
+    "ai_prompts": 40,
+    "ai_runs": 3,
+    "grid_size": 7,
+    "grid_keywords": 10,
+    "crawl_pages": 25,
+    "competitor_pages": 8,
+    "page_cooldown_days": 14
+  },
+  "thresholds": {
+    "gates": {
+      "demand_impressions_small_town": 10,
+      "demand_impressions_other": 30,
+      "small_town_population": 20000,
+      "demand_window_days": 90,
+      "demand_min_jobs": 2,
+      "demand_jobs_months": 24,
+      "max_drive_minutes": 120,
+      "evidence_min_items": 3,
+      "evidence_min_first_party": 1,
+      "swap_min_town_bound_share": 0.25,
+      "boilerplate_max_share": 0.6,
+      "similarity_max_jaccard": 0.6,
+      "shingle_size": 5,
+      "townlist_max_towns": 8,
+      "thin_min_words": 250,
+      "ramp_week_min_pages": 2,
+      "ramp_week_share": 0.1,
+      "ramp_month_max_small_site": 8,
+      "small_site_pages": 50,
+      "pilot_min_pages": 3,
+      "pilot_max_pages": 5,
+      "pilot_indexed_share": 0.6,
+      "pilot_indexed_days": 28,
+      "pilot_impressions_share": 0.5,
+      "pilot_impressions_days": 56,
+      "prune_min_age_days": 90,
+      "prune_max_impressions": 20,
+      "prune_template_not_indexed_share": 0.4,
+      "fact_freshness_days": 90,
+      "subsidy_freshness_days": 31
+    },
+    "teardown": {
+      "valid_days": 35,
+      "portal_dominated_min_non_business": 2,
+      "organic_now_positions": [
+        4,
+        15
+      ],
+      "organic_now_max_gap": 0.35,
+      "organic_with_work_max_gap": 0.65,
+      "organic_with_work_rd_multiple": 3,
+      "organic_with_work_rd_absolute": 20,
+      "organic_long_term_rd_multiple": 10,
+      "organic_long_term_rd_absolute": 50,
+      "pack_max_km": 15,
+      "pack_max_km_large_town": 5,
+      "large_town_population": 100000,
+      "pack_with_work_review_share": 0.5,
+      "ai_min_rating": 4.3,
+      "ai_min_reviews": 20,
+      "winnability_factor": {
+        "now": 1.0,
+        "with_work": 0.6,
+        "long_term": 0.25,
+        "out_of_radius": 0,
+        "blocked_by_basics": 0
+      },
+      "effort_weight": {
+        "S": 1,
+        "M": 2,
+        "L": 4
+      },
+      "weights": {
+        "organic": {
+          "dedicated_page": 20,
+          "geo_relevance": 15,
+          "referring_domains": 15,
+          "title_h1": 10,
+          "subquestions": 10,
+          "evidence_depth": 10,
+          "internal_links": 8,
+          "domain_age": 5,
+          "page_experience": 4,
+          "schema_entity": 3
+        },
+        "pack": {
+          "primary_category": 20,
+          "proximity": 20,
+          "review_count": 12,
+          "review_recency": 10,
+          "rating": 8,
+          "profile_completeness": 8,
+          "landing_title_h1": 8,
+          "landing_links": 8,
+          "nap_match": 6
+        },
+        "ai": {
+          "cited_domains_presence": 30,
+          "rating_volume": 20,
+          "dedicated_page_facts": 20,
+          "third_party_mentions": 20,
+          "bing_indexed": 10
+        }
+      }
+    },
+    "regression": {
+      "performance_min": 90,
+      "cls_max": 0.05,
+      "lcp_max_ms": 2500
+    },
+    "measure": {
+      "gsc_lag_days": 3,
+      "min_row_impressions": 50,
+      "min_verdict_impressions": 100
+    },
+    "alerts": {
+      "position_drop": 3,
+      "crawled_not_indexed_share": 0.2
+    },
+    "overrides": []
+  },
+  "connectors": {
+    "gsc": {
+      "property": "sc-domain:musterbetrieb.example"
+    },
+    "bing": {
+      "site_url": null
+    },
+    "gbp": {
+      "location": null
+    },
+    "psi": {
+      "strategy": "mobile"
+    },
+    "vercel": {
+      "project_id": null,
+      "team_id": null
+    },
+    "indexnow": {
+      "key_file": "public/3f9a2c7e5b1d4f6a8c0e2b4d6f8a1c3e.txt",
+      "endpoint": "https://api.indexnow.org/indexnow"
+    }
+  }
+}

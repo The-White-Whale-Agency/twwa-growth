@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "note": "German citation and listing sources (dossier 03 §5, 08). Tier 1 = data aggregators and maps every business needs; tier 2 = strong general directories; vertical = trade or profession portals. Free entries are preferred; 'paid' entries are listed for completeness and need an owner decision. Lead portals are not citations: they resell inquiries to several firms.",
+  "verified_on": "2026-11-16",
+  "sources": [
+    {"id": "google_business_profile", "name": "Google Unternehmensprofil", "url": "https://business.google.com", "tier": 1, "verticals": ["*"], "cost": "free"},
+    {"id": "bing_places", "name": "Bing Places", "url": "https://www.bingplaces.com", "tier": 1, "verticals": ["*"], "cost": "free", "why": "feeds Bing, Copilot and ChatGPT search"},
+    {"id": "apple_business_connect", "name": "Apple Business Connect", "url": "https://businessconnect.apple.com", "tier": 1, "verticals": ["*"], "cost": "free", "why": "Apple Maps, Siri"},
+    {"id": "dasoertliche", "name": "Das Örtliche", "url": "https://www.dasoertliche.de", "tier": 1, "verticals": ["*"], "cost": "free_basic"},
+    {"id": "gelbeseiten", "name": "Gelbe Seiten", "url": "https://www.gelbeseiten.de", "tier": 1, "verticals": ["*"], "cost": "free_basic"},
+    {"id": "dastelefonbuch", "name": "Das Telefonbuch", "url": "https://www.dastelefonbuch.de", "tier": 1, "verticals": ["*"], "cost": "free_basic"},
+    {"id": "elf880", "name": "11880", "url": "https://www.11880.com", "tier": 2, "verticals": ["*"], "cost": "free_basic"},
+    {"id": "cylex", "name": "Cylex", "url": "https://web2.cylex.de", "tier": 2, "verticals": ["*"], "cost": "free"},
+    {"id": "yelp", "name": "Yelp", "url": "https://biz.yelp.de", "tier": 2, "verticals": ["*"], "cost": "free"},
+    {"id": "werkenntdenbesten", "name": "Wer kennt den BESTEN", "url": "https://www.werkenntdenbesten.de", "tier": 2, "verticals": ["*"], "cost": "free_basic"},
+    {"id": "provenexpert", "name": "ProvenExpert", "url": "https://www.provenexpert.com", "tier": 2, "verticals": ["*"], "cost": "free_basic", "note": "reviews: same German rules as Google (no incentives, no gating)"},
+    {"id": "facebook", "name": "Facebook-Seite", "url": "https://www.facebook.com", "tier": 2, "verticals": ["*"], "cost": "free"},
+    {"id": "hwk_betriebsboerse", "name": "Handwerkskammer: Betriebs- bzw. Fachbetriebssuche", "url": null, "tier": "vertical", "verticals": ["handwerk"], "cost": "membership", "why": "authoritative, often cited; listing via the regional chamber"},
+    {"id": "innung", "name": "Innung (Mitgliederverzeichnis)", "url": null, "tier": "vertical", "verticals": ["handwerk"], "cost": "membership"},
+    {"id": "manufacturer_finder", "name": "Hersteller-Fachbetriebssuche (z. B. Putz-, Farb-, Dach-, Fenster-Hersteller)", "url": null, "tier": "vertical", "verticals": ["handwerk"], "cost": "partner_status", "why": "real partnership, strong relevance"},
+    {"id": "stbk_suchservice", "name": "Steuerberatersuchdienst der Steuerberaterkammer", "url": "https://www.bstbk.de", "tier": "vertical", "verticals": ["steuerberater"], "cost": "membership"},
+    {"id": "datev_smartexperts", "name": "DATEV SmartExperts", "url": "https://www.smartexperts.de", "tier": "vertical", "verticals": ["steuerberater"], "cost": "free_for_members"},
+    {"id": "anwalt_de", "name": "anwalt.de", "url": "https://www.anwalt.de", "tier": "vertical", "verticals": ["recht"], "cost": "paid"},
+    {"id": "vermittlerregister", "name": "Vermittlerregister (DIHK)", "url": "https://www.vermittlerregister.info", "tier": "vertical", "verticals": ["finanzberatung"], "cost": "mandatory_register", "why": "trust signal; link from the site"},
+    {"id": "fahrschulen_de", "name": "Fahrschulverzeichnisse (z. B. Landesverband)", "url": null, "tier": "vertical", "verticals": ["fahrschule"], "cost": "membership"},
+    {"id": "ivd", "name": "IVD-Mitgliedersuche", "url": "https://ivd.net", "tier": "vertical", "verticals": ["hausverwaltung"], "cost": "membership"},
+    {"id": "vdiv", "name": "VDIV-Verwaltersuche", "url": "https://vdiv.de", "tier": "vertical", "verticals": ["hausverwaltung"], "cost": "membership"},
+    {"id": "amoe", "name": "AMÖ/Möbelspediteure-Verzeichnis", "url": "https://www.amoe.de", "tier": "vertical", "verticals": ["spedition"], "cost": "membership"},
+    {"id": "local_press", "name": "Lokalzeitung / Amtsblatt", "url": null, "tier": "mention", "verticals": ["*"], "cost": "free", "why": "earned mention for real news (anniversary, apprenticeship, local project)"},
+    {"id": "municipality", "name": "Gemeinde-Branchenverzeichnis / Gewerbeverein", "url": null, "tier": "vertical", "verticals": ["*"], "cost": "free_or_membership"}
+  ],
+  "lead_portals_not_citations": ["myhammer.de", "check24.de", "aroundhome.de", "blauarbeit.de", "houzz.de"]
+}

@@ -1,0 +1,100 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base
+  title="Stuckateur in Musterstadt | Musterbetrieb Stuck und Putz"
+  description="Fassadensanierung, Innenputz und Stuck vom Meisterbetrieb in Musterstadt. Besichtigung innerhalb von 5 Werktagen, schriftliches Angebot. Jetzt anfragen."
+  path="/"
+  schema
+>
+  <main id="inhalt">
+    <section class="hero">
+      <img src="/hero-fassade.svg" alt="Frisch verputzte Altbaufassade in Musterstadt" width="1200" height="675" loading="eager" fetchpriority="high" />
+      <h1>Stuckateur in Musterstadt: Fassade, Putz und Stuck vom Meisterbetrieb</h1>
+      <p>Wir sanieren Fassaden, verputzen Innenräume und restaurieren Stuck in Musterstadt, Nachbarstadt und Beispielort. Zur Besichtigung kommen wir innerhalb von 5 Werktagen, das Angebot erhalten Sie schriftlich.</p>
+      <p>
+        <a class="btn" href="tel:+497000123456">Jetzt anrufen: 07000 / 12 34 56</a>
+        <a class="btn" href="#kontakt">Anfrage senden</a>
+        <a href="https://wa.me/497000123456">Per WhatsApp schreiben</a>
+      </p>
+    </section>
+
+    <section id="leistungen">
+      <h2>Leistungen</h2>
+      <article id="fassadensanierung">
+        <h3>Fassadensanierung</h3>
+        <p>Wir prüfen den Untergrund, entfernen lose Putzschichten, schließen Risse und tragen einen neuen mineralischen Oberputz auf. Ein Einfamilienhaus mit rund 200 m² Fassade dauert bei trockenem Wetter etwa zwei Wochen.</p>
+      </article>
+      <article id="innenputz">
+        <h3>Innenputz</h3>
+        <p>Kalk- und Gipsputz für Neubau und Altbau, auf Wunsch mit glatter Oberfläche für Tapete oder Anstrich.</p>
+      </article>
+      <article id="stuck">
+        <h3>Stuck</h3>
+        <p>Wir ergänzen fehlende Stuckprofile nach Abformung des Bestands und setzen Deckenrosetten wieder instand.</p>
+      </article>
+    </section>
+
+    <section id="referenzen">
+      <h2>Referenz: Fassade in Nachbarstadt</h2>
+      <figure>
+        <img src="/projekt-nachbarstadt.svg" alt="Sanierte Putzfassade eines Wohnhauses in Nachbarstadt" width="800" height="600" loading="lazy" />
+        <figcaption>Wohnhaus in Nachbarstadt-Altdorf, 240 m² Fassade, 9 Arbeitstage, Oktober 2026.</figcaption>
+      </figure>
+    </section>
+
+    <section id="ablauf">
+      <h2>So läuft Ihr Auftrag ab</h2>
+      <ol>
+        <li>Sie rufen an oder schicken uns eine Anfrage.</li>
+        <li>Wir besichtigen das Objekt innerhalb von 5 Werktagen.</li>
+        <li>Sie erhalten ein schriftliches Angebot mit Leistungsbeschreibung.</li>
+      </ol>
+    </section>
+
+    <section id="bewertungen">
+      <h2>Bewertungen</h2>
+      <blockquote>„Pünktlich, sauber gearbeitet und die Baustelle ordentlich hinterlassen.“</blockquote>
+      <p class="hinweis">Diese Bewertungen stammen von Google. Wir haben keinen Einfluss auf Auswahl und Inhalt und prüfen nicht, ob die Verfasser Kunden sind.</p>
+    </section>
+
+    <section id="einsatzgebiet">
+      <h2>Einsatzgebiet</h2>
+      <p>Unser Betrieb sitzt in Musterstadt. Nach Nachbarstadt fahren wir etwa 15 Minuten, nach Beispielort etwa 25 Minuten.</p>
+      <div class="karte">
+        <button type="button" data-karte="https://www.google.com/maps/embed?pb=musterbetrieb">Karte laden</button>
+        <p class="hinweis">Beim Laden der Karte werden Daten an Google übertragen.</p>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <h2>Anfrage senden</h2>
+      <form action="/api/contact" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required autocomplete="name" />
+        <label for="kontakt">Telefon oder E-Mail</label>
+        <input id="kontakt" name="kontakt" type="text" required />
+        <label for="thema">Worum geht es?</label>
+        <select id="thema" name="thema">
+          <option>Fassadensanierung</option>
+          <option>Innenputz</option>
+          <option>Stuck</option>
+        </select>
+        <label for="quelle">Wie haben Sie uns gefunden?</label>
+        <select id="quelle" name="quelle">
+          <option value="google-suche">Google-Suche</option>
+          <option value="google-maps">Google Maps</option>
+          <option value="empfehlung">Empfehlung</option>
+          <option value="fahrzeug-baustelle">Fahrzeug oder Baustellenschild</option>
+          <option value="ki-assistent">KI-Assistent</option>
+          <option value="sonstiges">Sonstiges</option>
+        </select>
+        <label for="nachricht">Ihre Nachricht</label>
+        <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+        <label><input type="checkbox" name="datenschutz" required /> Ich habe die <a href="/datenschutz">Datenschutzerklärung</a> gelesen.</label>
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button type="submit">Anfrage senden</button>
+      </form>
+    </section>
+  </main>
+</Base>

@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "facts": [
+    {
+      "id": "f-anfahrt-nachbarstadt",
+      "claim": "Anfahrt von Musterstadt nach Nachbarstadt",
+      "value": "15",
+      "unit": "Minuten",
+      "kind": "travel_time",
+      "town": "Nachbarstadt",
+      "pages": [],
+      "entities": [],
+      "source_url": null,
+      "source_date": null,
+      "verified_on": null,
+      "confirmed_by": "Max Mustermann (Telefonat 2026-11-03)",
+      "subsidy": false
+    },
+    {
+      "id": "f-denkmal-altdorf",
+      "claim": "Der Ortskern Altdorf ist eine denkmalgeschützte Gesamtanlage; Fassadenarbeiten brauchen eine Genehmigung des Bauamts Nachbarstadt",
+      "value": null,
+      "unit": null,
+      "kind": "local_regulation",
+      "town": "Nachbarstadt",
+      "pages": [],
+      "entities": [
+        "Ortskern Altdorf",
+        "Bauamt Nachbarstadt"
+      ],
+      "source_url": "https://www.nachbarstadt.example/bauen/denkmalschutz",
+      "source_date": "2026-06-01",
+      "verified_on": "2026-11-03",
+      "confirmed_by": null,
+      "subsidy": false,
+      "source_hash": null
+    },
+    {
+      "id": "f-meisterbetrieb",
+      "claim": "Meisterbetrieb, eingetragen bei der Handwerkskammer Musterregion",
+      "value": null,
+      "unit": null,
+      "kind": "credential",
+      "town": null,
+      "pages": [],
+      "entities": [],
+      "source_url": null,
+      "source_date": null,
+      "verified_on": null,
+      "confirmed_by": "Max Mustermann (Meisterbrief gesehen 2026-11-03)",
+      "subsidy": false
+    },
+    {
+      "id": "f-besichtigung",
+      "claim": "Besichtigung innerhalb von 5 Werktagen nach Anfrage",
+      "value": "5",
+      "unit": "Werktage",
+      "kind": "process",
+      "town": null,
+      "pages": [],
+      "entities": [],
+      "source_url": null,
+      "source_date": null,
+      "verified_on": null,
+      "confirmed_by": "Max Mustermann (Telefonat 2026-11-03)",
+      "subsidy": false
+    },
+    {
+      "id": "f-preis-fassade",
+      "claim": "Fassadensanierung mit Kalkputz am Einfamilienhaus: meist 90 bis 140 Euro pro m², je nach Untergrund und Gerüst, Stand November 2026",
+      "value": "90-140",
+      "unit": "€/m²",
+      "kind": "price",
+      "town": null,
+      "pages": [],
+      "entities": [],
+      "source_url": null,
+      "source_date": null,
+      "verified_on": null,
+      "confirmed_by": "Max Mustermann (E-Mail 2026-11-05)",
+      "subsidy": false
+    }
+  ]
+}

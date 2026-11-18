@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "competitors": [
+    {
+      "name": "Beispiel Putz und Farbe",
+      "domain": "beispiel-putz.example",
+      "place_id": null,
+      "source": "manual"
+    }
+  ]
+}

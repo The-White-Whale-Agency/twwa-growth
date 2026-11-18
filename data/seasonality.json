@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "note": "When German buyers start searching, by trade (dossier 05 §6). Content and GBP updates should be live 4 to 6 weeks before the peak. Starting values; confirm against the client's own GSC and GBP keyword data.",
+  "verified_on": "2026-11-16",
+  "trades": {
+    "stuckateur": {"peak_months": [3, 4, 5, 6, 7, 8, 9], "prepare_month": 2, "topics_de": ["Fassadensanierung", "Fassadenanstrich", "WDVS"]},
+    "maler": {"peak_months": [3, 4, 5, 6, 7, 8, 9], "prepare_month": 2, "topics_de": ["Fassade streichen", "Innenanstrich vor Umzug"]},
+    "dachdecker": {"peak_months": [3, 4, 5, 10, 11, 12, 1], "prepare_month": 2, "topics_de": ["Dachsanierung (Frühjahr)", "Sturmschaden (Herbst/Winter)"]},
+    "garten_landschaftsbau": {"peak_months": [2, 3, 4, 5, 9], "prepare_month": 1, "topics_de": ["Gartenplanung", "Pflasterarbeiten", "Herbstpflanzung"]},
+    "elektriker": {"peak_months": [1, 2, 3, 9, 10, 11], "prepare_month": 12, "topics_de": ["Wallbox", "Photovoltaik-Anschluss", "Altbau-Elektrik"]},
+    "steuerberater": {"peak_months": [1, 2, 3, 4, 5, 6, 7], "prepare_month": 12, "topics_de": ["Steuererklärung", "Frist 31. Juli", "Existenzgründung im Januar"]},
+    "umzug": {"peak_months": [5, 6, 7, 8, 9], "prepare_month": 4, "topics_de": ["Umzug im Sommer", "Halteverbotszone"]},
+    "fahrschule": {"peak_months": [3, 4, 5, 6, 7, 8], "prepare_month": 2, "topics_de": ["Führerschein in den Ferien", "Intensivkurs"]},
+    "hausverwaltung": {"peak_months": [1, 2, 9, 10, 11], "prepare_month": 12, "topics_de": ["Verwalterwechsel zum Jahresende", "Nebenkostenabrechnung"]}
+  }
+}

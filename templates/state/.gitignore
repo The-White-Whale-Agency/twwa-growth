@@ -1,0 +1,2 @@
+# Exports (HTML, SVG, PDF) stay out of git.
+out/

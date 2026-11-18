@@ -1,0 +1,11 @@
+[{"query": "stuckateur musterstadt", "surface": "organic", "class": "service_town", "town": "Musterstadt",
+  "observed_at": "2026-11-15T09:00:00Z", "how": "clean browser, location Musterstadt",
+  "results": [
+    {"rank": 1, "url": "https://www.beispiel-putz.example/stuckateur-musterstadt", "title": "Stuckateur in Musterstadt | Beispiel Putz und Farbe"},
+    {"rank": 2, "url": "https://www.gelbeseiten.de/branchen/stuckateur/musterstadt", "title": "Stuckateur Musterstadt - Gelbe Seiten"},
+    {"rank": 3, "url": "https://www.fassade-mueller.example/", "title": "Müller Fassaden"},
+    {"rank": 6, "url": "https://www.musterbetrieb.example/", "title": "Musterbetrieb Stuck und Putz"}],
+  "local_pack": [
+    {"rank": 1, "name": "Beispiel Putz und Farbe", "rating": 4.8, "reviews": 64, "category": "Stuckateur", "lat": 48.001, "lng": 8.002},
+    {"rank": 2, "name": "Müller Fassaden", "rating": 4.6, "reviews": 31, "category": "Stuckateur", "lat": 48.01, "lng": 8.01},
+    {"rank": 3, "name": "Musterbetrieb Stuck und Putz GmbH", "rating": 4.9, "reviews": 12, "category": "Stuckateur", "lat": 48.0, "lng": 8.0}]}]

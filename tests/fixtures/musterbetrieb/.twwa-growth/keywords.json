@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "clusters": [
+    {
+      "id": "fassade-musterstadt",
+      "queries": [
+        "fassadensanierung musterstadt",
+        "stuckateur musterstadt",
+        "gipser musterstadt"
+      ],
+      "intent": "service_town",
+      "priority": 1,
+      "target_page": "/",
+      "town": "Musterstadt",
+      "service": "fassadensanierung",
+      "target": true
+    },
+    {
+      "id": "fassade-nachbarstadt",
+      "queries": [
+        "fassadensanierung nachbarstadt",
+        "stuckateur nachbarstadt"
+      ],
+      "intent": "service_town",
+      "priority": 2,
+      "target_page": "/fassadensanierung-nachbarstadt",
+      "town": "Nachbarstadt",
+      "service": "fassadensanierung",
+      "target": true
+    },
+    {
+      "id": "fassade-beispielort",
+      "queries": [
+        "fassadensanierung beispielort"
+      ],
+      "intent": "service_town",
+      "priority": 3,
+      "target_page": "/fassadensanierung-beispielort",
+      "town": "Beispielort",
+      "service": "fassadensanierung",
+      "target": false
+    }
+  ]
+}

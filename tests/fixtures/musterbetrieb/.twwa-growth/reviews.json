@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "velocity_target": {
+    "per_month": null,
+    "basis": null,
+    "computed_on": null
+  },
+  "consent_ledger": [],
+  "reply_log": []
+}

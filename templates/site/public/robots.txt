@@ -1,0 +1,9 @@
+# twwa-growth robots.txt template. Copy to public/robots.txt and replace the host.
+# Search and answer crawlers (Googlebot, Bingbot, OAI-SearchBot, ChatGPT-User, PerplexityBot,
+# Claude-SearchBot) must stay allowed. Rules for training crawlers are a client decision
+# (config.ai_bots.training); this template adds none.
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://www.musterbetrieb.example/sitemap.xml

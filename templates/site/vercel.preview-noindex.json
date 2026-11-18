@@ -1,0 +1,9 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "staging.musterbetrieb.example" }],
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    }
+  ]
+}

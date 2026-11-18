@@ -1,0 +1,13 @@
+{
+  "name": "twwa-growth",
+  "version": "0.1.0",
+  "description": "Measured local growth for German SMB sites (Astro on Vercel): SERP teardowns across Google organic, the map pack and AI answers, gated pages, approvals bound to content, revertible actions, German owner reports.",
+  "author": {
+    "name": "The White Whale Agency",
+    "url": "https://thewhitewhaleagency.com"
+  },
+  "homepage": "https://github.com/The-White-Whale-Agency/twwa-growth",
+  "repository": "https://github.com/The-White-Whale-Agency/twwa-growth",
+  "license": "MIT",
+  "keywords": ["local-seo", "germany", "astro", "vercel", "google-business-profile", "ai-search"]
+}

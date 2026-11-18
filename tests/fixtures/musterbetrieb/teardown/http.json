@@ -1,0 +1,10 @@
+{"responses": {
+ "https://www.beispiel-putz.example/robots.txt": {"status": 404, "text": ""},
+ "https://www.fassade-mueller.example/robots.txt": {"status": 404, "text": ""},
+ "https://www.musterbetrieb.example/robots.txt": {"file": "../repo/dist/robots.txt"},
+ "https://www.beispiel-putz.example/stuckateur-musterstadt": {"text": "<html><head><title>Stuckateur in Musterstadt | Beispiel Putz</title><script type=\"application/ld+json\">{\"@type\":\"HousePainter\",\"name\":\"Beispiel\"}</script></head><body><h1>Stuckateur in Musterstadt</h1><p>Fassadensanierung in Musterstadt Altstadt: 240 m² Kalkputz, 3 Wochen, Preis ab 85 € pro m². Ablauf: Beratung, Angebot, Ausführung. Häufige Fragen? Was kostet ein Stuckateur? Rufen Sie an.</p><p>Referenz Musterstadt Südviertel: 180 m² WDVS in 12 Tagen.</p><img src=a.jpg alt=\"Fassade nach der Sanierung in Musterstadt Altstadt\"><a href=\"/\">Start</a><a href=\"tel:+4970001\">Anrufen</a></body></html>"},
+ "https://www.beispiel-putz.example/": {"text": "<html><head><title>Beispiel Putz</title></head><body><a href=\"/stuckateur-musterstadt\">Stuckateur Musterstadt</a><a href=\"/referenzen\">Referenzen</a></body></html>"},
+ "https://www.beispiel-putz.example/referenzen": {"text": "<html><head><title>Referenzen</title></head><body><a href=\"/stuckateur-musterstadt\">Stuckateur</a></body></html>"},
+ "https://www.fassade-mueller.example/": {"text": "<html><head><title>Müller Fassaden Musterstadt</title></head><body><h1>Fassaden und Putz</h1><p>Wir sanieren Fassaden seit 1998. Kosten auf Anfrage. Kontakt.</p></body></html>"},
+ "https://www.musterbetrieb.example/": {"file": "../repo/dist/index.html"}
+}}

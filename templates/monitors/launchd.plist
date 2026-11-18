@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Local weekly run. Replace CLIENT_REPO and PLUGIN_ROOT, then: launchctl load ~/Library/LaunchAgents/com.twwa.growth.weekly.plist -->
+<plist version="1.0"><dict>
+  <key>Label</key><string>com.twwa.growth.weekly</string>
+  <key>WorkingDirectory</key><string>CLIENT_REPO</string>
+  <key>ProgramArguments</key><array><string>/bin/sh</string><string>-c</string>
+    <string>python3 PLUGIN_ROOT/scripts/monitor.py all &gt;&gt; .twwa-growth/out/weekly.log 2&gt;&amp;1</string></array>
+  <key>StartCalendarInterval</key><dict><key>Weekday</key><integer>1</integer><key>Hour</key><integer>6</integer><key>Minute</key><integer>0</integer></dict>
+</dict></plist>

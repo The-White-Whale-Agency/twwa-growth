@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "prompts": [
+    {
+      "id": "p01",
+      "text": "Welcher Stuckateur in Musterstadt ist empfehlenswert?",
+      "class": "recommendation",
+      "location": "Musterstadt"
+    }
+  ]
+}

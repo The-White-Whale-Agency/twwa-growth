@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "name": "Musterbetrieb Stuck und Putz GmbH",
+  "name_source": "impressum",
+  "legal_form": "GmbH",
+  "owner": "Max Mustermann",
+  "vertical": "handwerk",
+  "trade": "stuckateur",
+  "schema_type": "HousePainter",
+  "address": {
+    "street": "Musterstraße 1",
+    "zip": "12345",
+    "city": "Musterstadt",
+    "region": "Baden-Württemberg",
+    "country": "DE",
+    "district": "Landkreis Musterkreis"
+  },
+  "address_public": true,
+  "customers_received_at_address": true,
+  "geo": {
+    "lat": 48.0,
+    "lng": 8.0
+  },
+  "phone": "+49 7000 123456",
+  "phone_display": "07000 / 12 34 56",
+  "tracking_numbers": [],
+  "email": "info@musterbetrieb.example",
+  "url": "https://www.musterbetrieb.example",
+  "hours": [
+    {
+      "days": [
+        "Mo",
+        "Tu",
+        "We",
+        "Th",
+        "Fr"
+      ],
+      "open": "07:30",
+      "close": "17:00"
+    }
+  ],
+  "special_hours": [],
+  "founded": 2001,
+  "services": [
+    {
+      "id": "fassadensanierung",
+      "name": "Fassadensanierung",
+      "page": "/#fassadensanierung",
+      "price": {
+        "unit": "m²",
+        "min": null,
+        "typical_min": null,
+        "typical_max": null,
+        "as_of": null,
+        "confirmed_by": null
+      },
+      "priority": 1,
+      "margin": "high",
+      "needs": [
+        "Risse im Putz",
+        "Altbau"
+      ]
+    },
+    {
+      "id": "innenputz",
+      "name": "Innenputz",
+      "page": "/#innenputz",
+      "price": {
+        "unit": "m²",
+        "min": null,
+        "typical_min": null,
+        "typical_max": null,
+        "as_of": null,
+        "confirmed_by": null
+      },
+      "priority": 2,
+      "margin": "medium"
+    },
+    {
+      "id": "stuck",
+      "name": "Stuck",
+      "page": "/#stuck",
+      "price": {
+        "unit": "lfm",
+        "min": null,
+        "typical_min": null,
+        "typical_max": null,
+        "as_of": null,
+        "confirmed_by": null
+      },
+      "priority": 3,
+      "margin": "high"
+    }
+  ],
+  "service_area": [
+    {
+      "town": "Musterstadt",
+      "zip": [
+        "12345"
+      ],
+      "population": 18000,
+      "drive_minutes": 0,
+      "owner_confirmed": "2026-11-01",
+      "jobs_last_24_months": 14,
+      "districts": [
+        "Altstadt",
+        "Südviertel"
+      ],
+      "local_authority": "Baurechtsamt Musterstadt"
+    },
+    {
+      "town": "Nachbarstadt",
+      "zip": [
+        "12346"
+      ],
+      "population": 9000,
+      "drive_minutes": 15,
+      "owner_confirmed": "2026-11-01",
+      "jobs_last_24_months": 5,
+      "districts": [
+        "Altdorf",
+        "Neubaugebiet Sonnenhang"
+      ],
+      "local_authority": "Bauamt Nachbarstadt"
+    },
+    {
+      "town": "Beispielort",
+      "zip": [
+        "12347"
+      ],
+      "population": 4000,
+      "drive_minutes": 25,
+      "owner_confirmed": null,
+      "jobs_last_24_months": 0
+    }
+  ],
+  "credentials": [
+    {
+      "type": "meisterbrief",
+      "holder": "Max Mustermann",
+      "issuer": "Handwerkskammer Musterregion",
+      "verified": true
+    }
+  ],
+  "memberships": [],
+  "gbp": {
+    "place_id": null,
+    "maps_url": null,
+    "primary_category": "Stuckateur",
+    "secondary_categories": [],
+    "role_twwa": "manager"
+  },
+  "profiles": {
+    "bing_places": null,
+    "apple_business": null,
+    "dasoertliche": null,
+    "gelbeseiten": null,
+    "elf880": null,
+    "werkenntdenbesten": null
+  },
+  "legal": {
+    "chamber": "Handwerkskammer Musterregion",
+    "register": "HRB 000000",
+    "vat_id": "DE000000000",
+    "profession_rules": null
+  },
+  "voice": {
+    "address": "Sie",
+    "regional_terms": [
+      "Gipser",
+      "Stuckateur"
+    ]
+  },
+  "capacity": {
+    "wanted_jobs_per_month": 4,
+    "avg_job_value_eur": null,
+    "close_rate": null
+  }
+}

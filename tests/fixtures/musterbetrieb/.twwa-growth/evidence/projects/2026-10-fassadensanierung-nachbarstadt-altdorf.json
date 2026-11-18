@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "2026-10-fassadensanierung-nachbarstadt-altdorf",
+  "received_on": "2026-11-17",
+  "source_file": "evidence/inbox/2026-10-projektbericht-nachbarstadt.txt",
+  "town": "Nachbarstadt",
+  "town_in_service_area": true,
+  "district": "Altdorf",
+  "street": null,
+  "street_public": false,
+  "service_id": "fassadensanierung",
+  "service_name": "Fassadensanierung",
+  "scope": [
+    {
+      "value": 240.0,
+      "unit": "m²",
+      "text": "240 m²"
+    }
+  ],
+  "duration": {
+    "value": 9.0,
+    "unit": "Arbeitstage",
+    "text": "9 Arbeitstage"
+  },
+  "month": "2026-10",
+  "material": "mineralischer Kalkputz",
+  "local_note": "Ortskern Altdorf ist Gesamtanlage, Abstimmung mit dem Bauamt Nachbarstadt zur Putzfarbe",
+  "challenge": "Alter Kalkputz an der Wetterseite hohl, Risse über den Fenstern.",
+  "solution": "Hohlstellen abgeschlagen, Risse mit Gewebe armiert, neuer Kalkputz in zwei Lagen, Farbton mit dem Bauamt abgestimmt.",
+  "responsible": "Max Mustermann",
+  "quote": {
+    "text": "Die Fassade sieht aus wie früher, nur ohne Risse.",
+    "consent": true
+  },
+  "price_band": null,
+  "photos": [
+    {
+      "file": "altdorf-vorher-1.jpg",
+      "caption": null,
+      "exif_stripped": null
+    },
+    {
+      "file": "altdorf-vorher-2.jpg",
+      "caption": null,
+      "exif_stripped": null
+    },
+    {
+      "file": "altdorf-geruest.jpg",
+      "caption": null,
+      "exif_stripped": null
+    },
+    {
+      "file": "altdorf-nachher-1.jpg",
+      "caption": null,
+      "exif_stripped": null
+    },
+    {
+      "file": "altdorf-nachher-2.jpg",
+      "caption": null,
+      "exif_stripped": null
+    }
+  ],
+  "local_entities": [
+    "Altdorf",
+    "Ortskern Altdorf",
+    "Bauamt Nachbarstadt"
+  ],
+  "fields": {
+    "month": "Oktober 2026",
+    "town": "Nachbarstadt",
+    "district": "Altdorf",
+    "service": "Fassadensanierung",
+    "scope": "240 m² Fassade, Wohnhaus von 1928",
+    "duration": "9 Arbeitstage",
+    "material": "mineralischer Kalkputz",
+    "local_note": "Ortskern Altdorf ist Gesamtanlage, Abstimmung mit dem Bauamt Nachbarstadt zur Putzfarbe",
+    "challenge": "Alter Kalkputz an der Wetterseite hohl, Risse über den Fenstern.",
+    "solution": "Hohlstellen abgeschlagen, Risse mit Gewebe armiert, neuer Kalkputz in zwei Lagen, Farbton mit dem Bauamt abgestimmt.",
+    "responsible": "Max Mustermann",
+    "quote": "Die Fassade sieht aus wie früher, nur ohne Risse.",
+    "quote_consent": "ja",
+    "photos": "altdorf-vorher-1.jpg, altdorf-vorher-2.jpg, altdorf-geruest.jpg, altdorf-nachher-1.jpg, altdorf-nachher-2.jpg"
+  },
+  "summary_de": "Fassadensanierung, in Nachbarstadt-Altdorf, 240 m², 9 Arbeitstage, fertig 2026-10.",
+  "missing": [],
+  "status": "complete",
+  "confirmed_by": null
+}

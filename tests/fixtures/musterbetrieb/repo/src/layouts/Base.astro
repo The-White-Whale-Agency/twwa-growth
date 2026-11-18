@@ -1,0 +1,57 @@
+---
+import SeoHead from '../components/SeoHead.astro';
+import LocalBusinessSchema from '../components/LocalBusinessSchema.astro';
+import business from '../data/business.json';
+
+interface Props {
+  title: string;
+  description: string;
+  path?: string;
+  noindex?: boolean;
+  schema?: boolean;
+}
+const { title, description, path, noindex = false, schema = false } = Astro.props;
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <SeoHead title={title} description={description} path={path} noindex={noindex} siteName={business.name} image="/hero-fassade.svg" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    {schema && <LocalBusinessSchema business={business} description={description} />}
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1f2a30; background: #faf8f4; line-height: 1.55; }
+      header.top, footer, main > section { padding: 1rem 1.25rem; max-width: 64rem; margin: 0 auto; }
+      header.top { display: flex; gap: 1rem; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+      .btn { display: inline-block; padding: .7rem 1.1rem; background: #2f4858; color: #fff; border-radius: .4rem; text-decoration: none; margin: .25rem .5rem .25rem 0; }
+      img { max-width: 100%; height: auto; }
+      .hinweis { font-size: .85rem; color: #4a5a63; }
+      form label { display: block; margin-top: .6rem; }
+      .hp { position: absolute; left: -9999px; }
+    </style>
+  </head>
+  <body>
+    <header class="top">
+      <a href="/">Musterbetrieb Stuck und Putz</a>
+      <nav aria-label="Hauptnavigation">
+        <a href="/#leistungen">Leistungen</a>
+        <a href="/#referenzen">Referenzen</a>
+        <a href="/#kontakt">Kontakt</a>
+      </nav>
+      <a href="tel:+497000123456">07000 / 12 34 56</a>
+    </header>
+    <slot />
+    <footer>
+      <address>
+        Musterbetrieb Stuck und Putz GmbH<br />
+        Musterstraße 1, 12345 Musterstadt<br />
+        Telefon <a href="tel:+497000123456">07000 / 12 34 56</a><br />
+        <a href="mailto:info@musterbetrieb.example">info@musterbetrieb.example</a>
+      </address>
+      <p>Montag bis Freitag 7:30 bis 17:00 Uhr</p>
+      <p><a href="/impressum">Impressum</a> · <a href="/datenschutz">Datenschutz</a></p>
+      <p>Website by <a href="https://thewhitewhaleagency.com/" rel="nofollow">The White Whale Agency</a></p>
+    </footer>
+  </body>
+</html>

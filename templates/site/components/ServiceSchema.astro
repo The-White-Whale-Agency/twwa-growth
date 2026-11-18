@@ -1,0 +1,38 @@
+---
+// twwa-growth Service JSON-LD for a service page (entity clarity only; no rich result).
+// Prices are emitted only when the owner confirmed them (price.confirmed_by is set).
+interface Props {
+  business: any;     // business.json object
+  serviceId: string; // services[].id
+  town?: string;     // optional town for a service and town page
+}
+const { business: b, serviceId, town } = Astro.props;
+const s = (b.services || []).find((x: any) => x.id === serviceId);
+if (!s) throw new Error(`ServiceSchema: unknown service id ${serviceId}`);
+const base = (b.url || '').replace(/\/$/, '');
+const p = s.price || {};
+const priced = p.confirmed_by && (p.typical_min != null || p.min != null);
+const node: Record<string, any> = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: s.name,
+  name: town ? `${s.name} in ${town}` : s.name,
+  provider: { '@id': `${base}/#betrieb` },
+  areaServed: town ? { '@type': 'City', name: town } : (b.service_area || []).map((t: any) => ({ '@type': 'City', name: t.town })),
+};
+if (priced) {
+  node.offers = {
+    '@type': 'Offer',
+    priceCurrency: 'EUR',
+    priceSpecification: {
+      '@type': 'UnitPriceSpecification',
+      priceCurrency: 'EUR',
+      minPrice: p.typical_min ?? p.min,
+      ...(p.typical_max != null ? { maxPrice: p.typical_max } : {}),
+      unitText: p.unit,
+    },
+  };
+}
+const json = JSON.stringify(node);
+---
+<script type="application/ld+json" set:html={json} />

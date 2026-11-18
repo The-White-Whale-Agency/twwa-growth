@@ -1,0 +1,13 @@
+{
+  "name": "musterbetrieb-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Fixture: Premium-Landingpage des fiktiven Musterbetrieb Stuck und Putz GmbH",
+  "scripts": {
+    "build": "astro build"
+  },
+  "dependencies": {
+    "astro": "^7.4.2"
+  }
+}

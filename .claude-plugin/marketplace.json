@@ -1,0 +1,15 @@
+{
+  "name": "twwa",
+  "description": "The White Whale Agency plugins for client site growth.",
+  "owner": {
+    "name": "The White Whale Agency",
+    "url": "https://thewhitewhaleagency.com"
+  },
+  "plugins": [
+    {
+      "name": "twwa-growth",
+      "source": "./",
+      "description": "Measured local growth for German SMB sites on Astro and Vercel."
+    }
+  ]
+}

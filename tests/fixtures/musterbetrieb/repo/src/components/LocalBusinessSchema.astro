@@ -1,0 +1,64 @@
+---
+// twwa-growth LocalBusiness JSON-LD, fed from the client's business data (same shape as
+// .twwa-growth/business.json). Unknown values (null) are never emitted. Render on the home page.
+// Keep this output identical to `schema_gen.py localbusiness`; `schema_gen.py validate` checks the build.
+interface Props {
+  business: any;               // business.json object
+  description?: string;
+}
+const { business: b, description } = Astro.props;
+const base = (b.url || String(Astro.site || '')).replace(/\/$/, '');
+const dayMap: Record<string, string> = { Mo: 'Monday', Tu: 'Tuesday', We: 'Wednesday', Th: 'Thursday', Fr: 'Friday', Sa: 'Saturday', Su: 'Sunday' };
+
+function prune(o: any): any {
+  if (Array.isArray(o)) {
+    const a = o.map(prune).filter((x) => x !== undefined);
+    return a.length ? a : undefined;
+  }
+  if (o && typeof o === 'object') {
+    const out: Record<string, any> = {};
+    for (const [k, v] of Object.entries(o)) {
+      const pv = prune(v);
+      if (pv !== undefined) out[k] = pv;
+    }
+    return Object.keys(out).filter((k) => !k.startsWith('@')).length ? out : undefined;
+  }
+  return o === null || o === '' ? undefined : o;
+}
+
+const profileUrls = [b.gbp?.maps_url, ...Object.values(b.profiles || {})].filter((u) => typeof u === 'string' && u.startsWith('http'));
+const node = prune({
+  '@type': b.schema_type || 'LocalBusiness',
+  '@id': `${base}/#betrieb`,
+  name: b.name,
+  url: b.url,
+  description,
+  telephone: b.phone,
+  email: b.email,
+  foundingDate: b.founded ? String(b.founded) : null,
+  address: b.address_public === false ? null : {
+    '@type': 'PostalAddress',
+    streetAddress: b.address?.street,
+    postalCode: b.address?.zip,
+    addressLocality: b.address?.city,
+    addressRegion: b.address?.region,
+    addressCountry: b.address?.country,
+  },
+  geo: b.geo?.lat != null && b.geo?.lng != null ? { '@type': 'GeoCoordinates', latitude: b.geo.lat, longitude: b.geo.lng } : null,
+  openingHoursSpecification: (b.hours || []).map((h: any) => ({
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: (h.days || []).map((d: string) => dayMap[d] || d),
+    opens: h.open,
+    closes: h.close,
+  })),
+  areaServed: (b.service_area || []).map((t: any) => ({ '@type': 'City', name: t.town })),
+  knowsAbout: (b.services || []).map((s: any) => s.name),
+  sameAs: profileUrls,
+});
+const graph = [
+  { '@type': 'WebSite', '@id': `${base}/#website`, url: b.url, name: b.name, inLanguage: 'de-DE', publisher: { '@id': `${base}/#betrieb` } },
+  node,
+];
+const json = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph });
+---
+<script type="application/ld+json" set:html={json} />

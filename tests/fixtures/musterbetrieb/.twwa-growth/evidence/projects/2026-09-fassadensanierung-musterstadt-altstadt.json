@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "2026-09-fassadensanierung-musterstadt-altstadt",
+  "received_on": "2026-11-17",
+  "source_file": "evidence/inbox/2026-09-kurz.txt",
+  "town": "Musterstadt",
+  "town_in_service_area": true,
+  "district": "Altstadt",
+  "street": null,
+  "street_public": false,
+  "service_id": "fassadensanierung",
+  "service_name": "Fassadensanierung",
+  "scope": [
+    {
+      "value": 180.0,
+      "unit": "m²",
+      "text": "180 m²"
+    }
+  ],
+  "duration": {
+    "value": 7.0,
+    "unit": "Arbeitstage",
+    "text": "7 Arbeitstage"
+  },
+  "month": "2026-09",
+  "material": null,
+  "local_note": null,
+  "challenge": null,
+  "solution": null,
+  "responsible": null,
+  "quote": null,
+  "price_band": null,
+  "photos": [
+    {
+      "file": "altstadt-1.jpg",
+      "caption": null,
+      "exif_stripped": null
+    },
+    {
+      "file": "altstadt-2.jpg",
+      "caption": null,
+      "exif_stripped": null
+    },
+    {
+      "file": "altstadt-3.jpg",
+      "caption": null,
+      "exif_stripped": null
+    }
+  ],
+  "notes": "Hallo, im September haben wir in Musterstadt in der Altstadt eine Fassadensanierung gemacht, 180 m², hat 7 Arbeitstage gedauert. Fotos: altstadt-1.jpg altstadt-2.jpg altstadt-3.jpg",
+  "local_entities": [
+    "Altstadt"
+  ],
+  "fields": {},
+  "summary_de": "Fassadensanierung, in Musterstadt-Altstadt, 180 m², 7 Arbeitstage, fertig 2026-09.",
+  "missing": [
+    {
+      "field": "challenge_solution",
+      "frage_de": "Was war die Herausforderung, und wie haben Sie sie gelöst? Ein bis zwei Sätze genügen."
+    }
+  ],
+  "status": "complete",
+  "confirmed_by": null
+}

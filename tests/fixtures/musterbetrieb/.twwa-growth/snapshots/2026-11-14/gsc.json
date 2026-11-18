@@ -1,0 +1,126 @@
+{
+  "source": "gsc",
+  "pulled_at": "2026-11-14T06:00:00Z",
+  "range": {
+    "start": "2026-08-13",
+    "end": "2026-11-10"
+  },
+  "origin": "fixture",
+  "property": "sc-domain:musterbetrieb.example",
+  "rows": [
+    {
+      "page": "https://www.musterbetrieb.example/",
+      "query": "stuckateur musterstadt",
+      "clicks": 9,
+      "impressions": 140,
+      "ctr": 0.0643,
+      "position": 4.2,
+      "branded": false
+    },
+    {
+      "page": "https://www.musterbetrieb.example/",
+      "query": "fassadensanierung musterstadt",
+      "clicks": 4,
+      "impressions": 96,
+      "ctr": 0.0417,
+      "position": 6.8,
+      "branded": false
+    },
+    {
+      "page": "https://www.musterbetrieb.example/",
+      "query": "gipser musterstadt",
+      "clicks": 3,
+      "impressions": 51,
+      "ctr": 0.0588,
+      "position": 5.1,
+      "branded": false
+    },
+    {
+      "page": "https://www.musterbetrieb.example/",
+      "query": "musterbetrieb stuck und putz",
+      "clicks": 21,
+      "impressions": 64,
+      "ctr": 0.3281,
+      "position": 1.0,
+      "branded": true
+    },
+    {
+      "page": "https://www.musterbetrieb.example/",
+      "query": "fassadensanierung nachbarstadt",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0.0,
+      "position": 18.5,
+      "branded": false
+    },
+    {
+      "page": "https://www.musterbetrieb.example/",
+      "query": "stuckateur nachbarstadt",
+      "clicks": 1,
+      "impressions": 22,
+      "ctr": 0.0455,
+      "position": 11.3,
+      "branded": false
+    },
+    {
+      "page": "https://www.musterbetrieb.example/",
+      "query": "innenputz kosten",
+      "clicks": 0,
+      "impressions": 35,
+      "ctr": 0.0,
+      "position": 38.0,
+      "branded": false
+    },
+    {
+      "page": "https://www.musterbetrieb.example/",
+      "query": "fassadensanierung beispielort",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0.0,
+      "position": 41.0,
+      "branded": false
+    }
+  ],
+  "pages": [
+    {
+      "page": "https://www.musterbetrieb.example/",
+      "clicks": 38,
+      "impressions": 425,
+      "ctr": 0.0894,
+      "position": 7.9
+    },
+    {
+      "page": "https://www.musterbetrieb.example/impressum",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 12.0
+    }
+  ],
+  "inspection": [
+    {
+      "url": "https://www.musterbetrieb.example/",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "google_canonical": "https://www.musterbetrieb.example/",
+      "user_canonical": "https://www.musterbetrieb.example/",
+      "last_crawl": "2026-11-09"
+    },
+    {
+      "url": "https://www.musterbetrieb.example/impressum",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "google_canonical": "https://www.musterbetrieb.example/impressum",
+      "user_canonical": "https://www.musterbetrieb.example/impressum",
+      "last_crawl": "2026-10-30"
+    },
+    {
+      "url": "https://www.musterbetrieb.example/datenschutz",
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "google_canonical": "https://www.musterbetrieb.example/datenschutz",
+      "user_canonical": "https://www.musterbetrieb.example/datenschutz",
+      "last_crawl": "2026-10-30"
+    }
+  ]
+}

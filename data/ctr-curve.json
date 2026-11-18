@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "note": "Starting heuristic for expected organic CTR by average position on non-branded queries. Pages with an AI Overview see much lower CTR (dossier 04/05: -58% to -61% for position 1). Recalibrate from the client's own GSC rows once there are 1,000+ impressions; learning.py suggest proposes updates.",
+  "verified_on": "2026-11-16",
+  "by_position": {"1": 0.25, "2": 0.13, "3": 0.09, "4": 0.065, "5": 0.05, "6": 0.04, "7": 0.032, "8": 0.026, "9": 0.022, "10": 0.019,
+                  "11": 0.012, "12": 0.01, "13": 0.009, "14": 0.008, "15": 0.007, "20": 0.004},
+  "outlier_share": 0.5,
+  "min_impressions": 100
+}

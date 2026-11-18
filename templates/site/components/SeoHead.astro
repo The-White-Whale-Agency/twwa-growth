@@ -1,0 +1,49 @@
+---
+// twwa-growth SEO head. Copy to src/components/SeoHead.astro and render it inside <head>.
+// - one absolute, self-referencing canonical built from Astro.site, normalised to the slash policy
+// - query strings and hashes never reach the canonical (UTM links from GBP canonicalise to the clean URL)
+// - noindex pages get "noindex, follow"; preview hosts are handled by an X-Robots-Tag header in vercel.json
+interface Props {
+  title: string;
+  description: string;
+  path?: string;                 // defaults to the current path
+  noindex?: boolean;
+  canonical?: string;            // only for an intentional cross-page canonical
+  trailingSlash?: 'never' | 'always';
+  image?: string;                // absolute or root-relative OG image
+  siteName?: string;
+}
+const {
+  title,
+  description,
+  path = Astro.url.pathname,
+  noindex = false,
+  canonical: canonicalOverride,
+  trailingSlash = 'never',
+  image,
+  siteName,
+} = Astro.props;
+
+if (!Astro.site) throw new Error('SeoHead: set `site` in astro.config.mjs (needed for absolute canonicals).');
+
+function normalise(p: string): string {
+  let clean = (p || '/').split('#')[0].split('?')[0].replace(/\.html$/, '').replace(/\/index$/, '/');
+  if (!clean.startsWith('/')) clean = '/' + clean;
+  if (clean === '/') return '/';
+  if (trailingSlash === 'never') return clean.replace(/\/+$/, '');
+  return clean.endsWith('/') ? clean : clean + '/';
+}
+const canonical = canonicalOverride ?? new URL(normalise(path), Astro.site).toString();
+const ogImage = image ? new URL(image, Astro.site).toString() : undefined;
+---
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+{noindex && <meta name="robots" content="noindex, follow" />}
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="de_DE" />
+{siteName && <meta property="og:site_name" content={siteName} />}
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+{ogImage && <meta property="og:image" content={ogImage} />}
